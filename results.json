@@ -1,0 +1,599 @@
+{
+  "data_kind": "synthetic_assumptions",
+  "cases": [
+    {
+      "id": "choice_and_night",
+      "old_deadlines": {
+        "A": 380,
+        "B": 90
+      },
+      "old_plan": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              370
+            ],
+            "unload": [
+              370,
+              380
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              80
+            ],
+            "unload": [
+              80,
+              90
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "A:unload"
+        ],
+        "new_ready": null
+      },
+      "protected_best": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              370
+            ],
+            "unload": [
+              370,
+              380
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              80
+            ],
+            "unload": [
+              80,
+              90
+            ]
+          },
+          "C": {
+            "printer": "P1",
+            "setup": [
+              380,
+              390
+            ],
+            "print": [
+              390,
+              450
+            ],
+            "unload": [
+              450,
+              460
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "A:unload",
+          "C:setup",
+          "C:unload"
+        ],
+        "new_ready": 460
+      },
+      "first_free_printer": "P2",
+      "first_free_plan": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              370
+            ],
+            "unload": [
+              370,
+              380
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              80
+            ],
+            "unload": [
+              80,
+              90
+            ]
+          },
+          "C": {
+            "printer": "P2",
+            "setup": [
+              90,
+              100
+            ],
+            "print": [
+              100,
+              700
+            ],
+            "unload": [
+              1440,
+              1450
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "C:setup",
+          "A:unload",
+          "C:unload"
+        ],
+        "new_ready": 1450
+      },
+      "unprotected_best": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              370
+            ],
+            "unload": [
+              370,
+              380
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              80
+            ],
+            "unload": [
+              80,
+              90
+            ]
+          },
+          "C": {
+            "printer": "P1",
+            "setup": [
+              380,
+              390
+            ],
+            "print": [
+              390,
+              450
+            ],
+            "unload": [
+              450,
+              460
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "A:unload",
+          "C:setup",
+          "C:unload"
+        ],
+        "new_ready": 460
+      },
+      "unprotected_old_shifts": {
+        "A": 0,
+        "B": 0
+      },
+      "improvement_minutes_in_this_example": 990,
+      "enumeration": {
+        "old": {
+          "assignments": 1,
+          "complete_orders": 6,
+          "states": 19
+        },
+        "protected": {
+          "assignments": 2,
+          "complete_orders": 3,
+          "states": 52
+        },
+        "unprotected": {
+          "assignments": 2,
+          "complete_orders": 30,
+          "states": 110
+        }
+      },
+      "checked_plans": 39
+    },
+    {
+      "id": "accepted_deadlines",
+      "old_deadlines": {
+        "A": 440,
+        "B": 60
+      },
+      "old_plan": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              430
+            ],
+            "unload": [
+              430,
+              440
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              50
+            ],
+            "unload": [
+              50,
+              60
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "A:unload"
+        ],
+        "new_ready": null
+      },
+      "protected_best": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              430
+            ],
+            "unload": [
+              430,
+              440
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              50
+            ],
+            "unload": [
+              50,
+              60
+            ]
+          },
+          "C": {
+            "printer": "P2",
+            "setup": [
+              60,
+              70
+            ],
+            "print": [
+              70,
+              430
+            ],
+            "unload": [
+              440,
+              450
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "C:setup",
+          "A:unload",
+          "C:unload"
+        ],
+        "new_ready": 450
+      },
+      "first_free_printer": "P2",
+      "first_free_plan": {
+        "schedule": {
+          "A": {
+            "printer": "P1",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              430
+            ],
+            "unload": [
+              430,
+              440
+            ]
+          },
+          "B": {
+            "printer": "P2",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              50
+            ],
+            "unload": [
+              50,
+              60
+            ]
+          },
+          "C": {
+            "printer": "P2",
+            "setup": [
+              60,
+              70
+            ],
+            "print": [
+              70,
+              430
+            ],
+            "unload": [
+              440,
+              450
+            ]
+          }
+        },
+        "operator_order": [
+          "A:setup",
+          "B:setup",
+          "B:unload",
+          "C:setup",
+          "A:unload",
+          "C:unload"
+        ],
+        "new_ready": 450
+      },
+      "unprotected_best": {
+        "schedule": {
+          "B": {
+            "printer": "P2",
+            "setup": [
+              0,
+              10
+            ],
+            "print": [
+              10,
+              40
+            ],
+            "unload": [
+              40,
+              50
+            ]
+          },
+          "A": {
+            "printer": "P1",
+            "setup": [
+              10,
+              20
+            ],
+            "print": [
+              20,
+              440
+            ],
+            "unload": [
+              440,
+              450
+            ]
+          },
+          "C": {
+            "printer": "P2",
+            "setup": [
+              50,
+              60
+            ],
+            "print": [
+              60,
+              420
+            ],
+            "unload": [
+              420,
+              430
+            ]
+          }
+        },
+        "operator_order": [
+          "B:setup",
+          "A:setup",
+          "B:unload",
+          "C:setup",
+          "C:unload",
+          "A:unload"
+        ],
+        "new_ready": 430
+      },
+      "unprotected_old_shifts": {
+        "A": 10,
+        "B": -10
+      },
+      "improvement_minutes_in_this_example": 0,
+      "enumeration": {
+        "old": {
+          "assignments": 1,
+          "complete_orders": 6,
+          "states": 19
+        },
+        "protected": {
+          "assignments": 2,
+          "complete_orders": 3,
+          "states": 52
+        },
+        "unprotected": {
+          "assignments": 2,
+          "complete_orders": 30,
+          "states": 110
+        }
+      },
+      "checked_plans": 39
+    }
+  ],
+  "checks": [
+    {
+      "id": "hand_calculated_choice_and_night",
+      "passed": true
+    },
+    {
+      "id": "reject_delayed_accepted_job",
+      "passed": true,
+      "errors": [
+        "accepted_deadline"
+      ]
+    },
+    {
+      "id": "wrong_ready",
+      "passed": true,
+      "errors": [
+        "premature_or_wrong_ready"
+      ]
+    },
+    {
+      "id": "double_booked_operator",
+      "passed": true,
+      "errors": [
+        "operator_overlap",
+        "precedence"
+      ]
+    },
+    {
+      "id": "setup_crossing_lunch",
+      "passed": true,
+      "errors": [
+        "operator_calendar",
+        "precedence",
+        "printer_holding_overlap",
+        "queue_order"
+      ]
+    },
+    {
+      "id": "printer_reused_before_removal",
+      "passed": true,
+      "errors": [
+        "operator_overlap",
+        "precedence",
+        "printer_holding_overlap",
+        "queue_order"
+      ]
+    },
+    {
+      "id": "infeasible_within_100_minute_horizon",
+      "passed": true,
+      "enumeration": {
+        "assignments": 2,
+        "complete_orders": 0,
+        "states": 6
+      },
+      "scope": "only the specified model and horizon"
+    },
+    {
+      "id": "wait_for_lunch_to_end",
+      "passed": true,
+      "plan": {
+        "schedule": {
+          "X": {
+            "printer": "P1",
+            "setup": [
+              300,
+              310
+            ],
+            "print": [
+              310,
+              320
+            ],
+            "unload": [
+              320,
+              330
+            ]
+          }
+        },
+        "operator_order": [
+          "X:setup",
+          "X:unload"
+        ],
+        "new_ready": 330
+      },
+      "enumeration": {
+        "assignments": 1,
+        "complete_orders": 1,
+        "states": 3
+      }
+    }
+  ],
+  "timing": {
+    "started_utc": "2026-11-12T11:50:47.384350+00:00",
+    "calculation_and_checks_seconds": 0.006446300001698546,
+    "note": "Includes enumeration and checks; excludes reading/writing result files and author work."
+  },
+  "environment": {
+    "python": "3.12.10",
+    "dependencies": "standard library only",
+    "ortools_run": false
+  },
+  "input_sha256": "81c74fba5352fe60c90015a5c68c1e3e3ae0ed5c43af82f401bb4cf2a87bd14c"
+}
